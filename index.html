@@ -1,11 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" id="top">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Matthew Roupp — IT portfolio showcasing certifications, skills, projects, documents, and learning progress." />
   <title>Matthew Roupp | IT Portfolio</title>
-
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -13,8 +12,8 @@
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
-    <div class="container header-grid">
-      <div>
+    <div class="container hero">
+      <div class="hero-left">
         <p class="kicker">IT Portfolio</p>
         <h1 class="site-title">Matthew Roupp</h1>
         <p class="subtitle">
@@ -23,25 +22,36 @@
 
         <div class="button-row">
           <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn" href="#contact">Contact</a>
+          <a class="btn" href="#certifications">Certifications</a>
+          <a class="btn ghost" href="#contact">Contact</a>
+        </div>
+
+        <div class="hero-badges" aria-label="Highlights">
+          <span class="badge pill">Hands-on labs</span>
+          <span class="badge pill">Documented growth</span>
+          <span class="badge pill">Reliable & process-driven</span>
         </div>
       </div>
 
-      <div class="profile-card" role="complementary" aria-label="Profile highlights">
-        <ul class="profile-list">
-          <li><span class="pill">Hands-on</span> Labs, hardware, troubleshooting</li>
-          <li><span class="pill">Growing</span> Certifications + coursework</li>
-          <li><span class="pill">Reliable</span> Documentation and process</li>
-        </ul>
-        <p class="muted small">
-          This site is intentionally simple, fast, and accessible — built to grow over time.
-        </p>
-      </div>
+      <aside class="hero-right" aria-label="Profile overview">
+        <div class="profile-card">
+          <h2 class="card-title">Quick Overview</h2>
+          <ul class="clean-list">
+            <li>Building a well-rounded IT foundation across systems, networking, and support.</li>
+            <li>Tracking certifications, coursework, and real projects with evidence.</li>
+            <li>Focused on clear communication and practical troubleshooting.</li>
+          </ul>
+          <div class="callout callout-teal">
+            <strong>Now:</strong> Adding projects, documentation, and certificates as I progress.
+          </div>
+        </div>
+      </aside>
     </div>
   </header>
 
   <nav class="site-nav" aria-label="Primary">
-    <div class="container">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Home">MR</a>
       <ul class="nav-list">
         <li><a href="#about">About</a></li>
         <li><a href="#certifications">Certifications</a></li>
@@ -56,13 +66,13 @@
   </nav>
 
   <main id="main" class="container main">
-    <!-- ABOUT -->
     <section id="about" class="section">
-      <h2>About</h2>
-      <p>
-        I’m building a career in IT by combining formal coursework, certifications, and hands-on projects.
-        I focus on being well-rounded across IT fundamentals while continuing to deepen my strengths over time.
-      </p>
+      <div class="section-head">
+        <h2>About</h2>
+        <p class="section-sub">
+          I’m building a career in IT by combining formal coursework, certifications, and hands-on projects. I focus on being well-rounded across IT fundamentals while continuing to deepen my strengths over time.
+        </p>
+      </div>
 
       <div class="grid two">
         <article class="card">
@@ -85,22 +95,26 @@
       </div>
     </section>
 
-    <!-- CERTIFICATIONS -->
     <section id="certifications" class="section">
-      <h2>Certifications</h2>
-      <div class="callout">
+      <div class="section-head">
+        <h2>Certifications</h2>
+        <p class="section-sub">Credentials and verified learning milestones.</p>
+      </div>
+
+      <div class="callout callout-amber">
         <strong>Certification Philosophy:</strong> I pursue certifications to build structured knowledge, validate real-world skills, and demonstrate continued professional growth.
       </div>
+
       <div class="grid three">
         <article class="card">
-          <h3>Adult & Child CPR/AED</h3>
+          <h3>Adult &amp; Child CPR/AED</h3>
           <p class="muted">Standard First Aid</p>
           <p class="small">Highlights calm response, procedure, and safety mindset.</p>
         </article>
 
         <article class="card">
           <h3>CPO</h3>
-          <p class="muted">Certified Pool & Spa Operator</p>
+          <p class="muted">Certified Pool &amp; Spa Operator</p>
           <p class="small">Shows accountability, compliance, logs, and operations discipline.</p>
         </article>
 
@@ -112,9 +126,12 @@
       </div>
     </section>
 
-    <!-- SKILLS -->
     <section id="skills" class="section">
-      <h2>Skills</h2>
+      <div class="section-head">
+        <h2>Skills</h2>
+        <p class="section-sub">A mix of technical capability and professional reliability.</p>
+      </div>
+
       <div class="grid two">
         <article class="card">
           <h3>Technical</h3>
@@ -134,24 +151,25 @@
             <li class="tag">Leadership</li>
             <li class="tag">Communication</li>
             <li class="tag">Incident Reporting</li>
-            <li class="tag">Process & Safety</li>
-            <li class="tag">Training & Mentoring</li>
+            <li class="tag">Process &amp; Safety</li>
+            <li class="tag">Training &amp; Mentoring</li>
           </ul>
         </article>
       </div>
     </section>
 
-    <!-- PROJECTS -->
     <section id="projects" class="section">
-      <h2>Projects</h2>
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p class="section-sub">Short, evidence-based write-ups of what I built and what I learned.</p>
+      </div>
 
       <div class="grid two">
-        <article class="card">
+        <article class="card featured">
           <h3>GitHub Pages Portfolio</h3>
           <p class="muted">HTML + CSS • Accessible layout • Version controlled</p>
           <p>
-            This website is an ongoing project: clean structure, readable styling, and
-            consistent updates as I learn.
+            This website is an ongoing project: clean structure, readable styling, and consistent updates as I learn.
           </p>
           <div class="meta">
             <span class="badge">Beginner-friendly</span>
@@ -172,12 +190,11 @@
       </div>
     </section>
 
-    <!-- DOCUMENTS -->
     <section id="documents" class="section">
-      <h2>Documents</h2>
-      <p class="muted">
-        Add PDFs, resumes, write-ups, lab notes, and certificates. Keep file names clear and consistent.
-      </p>
+      <div class="section-head">
+        <h2>Documents</h2>
+        <p class="section-sub">PDFs, resumes, write-ups, lab notes, and certificates.</p>
+      </div>
 
       <div class="grid three">
         <a class="doc-card" href="assets/docs/resume.pdf" target="_blank" rel="noopener">
@@ -205,17 +222,14 @@
         </a>
       </div>
 
-      <p class="small muted">
-        Tip: If a link 404s, it means the file path/name doesn’t match what’s in your repo.
-      </p>
+      <p class="small muted">Tip: If a link 404s, the file path/name doesn’t match what’s in your repo.</p>
     </section>
 
-    <!-- IMAGES -->
     <section id="images" class="section">
-      <h2>Images</h2>
-      <p class="muted">
-        Screenshots of projects, diagrams, lab setups, or anything that shows real work.
-      </p>
+      <div class="section-head">
+        <h2>Images</h2>
+        <p class="section-sub">Screenshots of labs, diagrams, and real work evidence.</p>
+      </div>
 
       <div class="grid gallery">
         <figure class="img-card">
@@ -235,9 +249,12 @@
       </div>
     </section>
 
-    <!-- DESIGN NOTES (INCORPORATES YOUR CLASS REQUIREMENTS) -->
     <section id="design" class="section">
-      <h2>Design Notes</h2>
+      <div class="section-head">
+        <h2>Design Notes</h2>
+        <p class="section-sub">Audience, purpose, objectives, and accessibility choices.</p>
+      </div>
+
       <div class="grid two">
         <article class="card">
           <h3>Audience, Purpose, Objectives</h3>
@@ -260,30 +277,27 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact" class="section">
-      <h2>Contact</h2>
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p class="section-sub">Links for professional contact and profiles.</p>
+      </div>
+
       <div class="grid two">
         <article class="card">
           <h3>Links</h3>
           <ul class="clean-list">
-            <li><a href="https://github.com/yourusername">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a></li>
+            <li><a href="https://github.com/MatthewMRoupp">GitHub</a></li>
+            <li><a href="#" aria-label="LinkedIn profile link">LinkedIn</a></li>
             <li><a href="mailto:mmroupp@gmail.com">mmroupp@gmail.com</a></li>
           </ul>
-          <p class="small muted">
-            Replace these with your real links. Keep it simple and professional.
-          </p>
+          <p class="small muted">Replace LinkedIn with your real profile link.</p>
         </article>
 
         <article class="card">
           <h3>Quick note</h3>
-          <p>
-            I’m open to entry-level roles, internships, and opportunities to learn from experienced teams.
-          </p>
-          <p class="small muted">
-            # Additional Section for Later?
-          </p>
+          <p>I’m open to entry-level roles, internships, and opportunities to learn from experienced teams.</p>
+          <p class="small muted">(Optional) Add your preferred location or remote availability here.</p>
         </article>
       </div>
     </section>
