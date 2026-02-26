@@ -116,26 +116,65 @@
       </div>
 
       <div class="grid three">
-        <article class="card">
+        <article class="card cert-card">
           <h3>Adult &amp; Child CPR/AED</h3>
-          <p class="muted">Standard First Aid</p>
-          <p class="small">Highlights calm response, procedure, and safety mindset.</p>
+      
+          <button class="cert-thumb" type="button"
+            data-full="assets/images/cpr-aed.jpg"
+            data-alt="Adult and Child CPR/AED certification certificate"
+            aria-haspopup="dialog">
+            <img src="assets/images/cpr-aed-thumb.jpg" alt="Adult and Child CPR/AED certificate thumbnail" loading="lazy">
+            <span class="cert-thumb-hint">Click to expand</span>
+          </button>
+      
+          <ul class="cert-meta" aria-label="Certification details">
+            <li><span>Issued:</span> <strong>Jan 2026</strong></li>
+            <li><span>Expires:</span> <strong>Jan 2028</strong></li>
+          </ul>
+      
+          <p class="muted small">
+            Covers emergency response, AED use, and first aid basics. Supports my goal of being reliable under pressure and following clear procedures.
+          </p>
         </article>
-
-        <article class="card">
+      
+        <article class="card cert-card">
           <h3>CPO</h3>
-          <p class="muted">Certified Pool &amp; Spa Operator</p>
-          <p class="small">Shows accountability, compliance, logs, and operations discipline.</p>
+      
+          <button class="cert-thumb" type="button"
+            data-full="assets/images/cpo.jpg"
+            data-alt="Certified Pool and Spa Operator certification certificate"
+            aria-haspopup="dialog">
+            <img src="assets/images/cpo-thumb.jpg" alt="CPO certificate thumbnail" loading="lazy">
+            <span class="cert-thumb-hint">Click to expand</span>
+          </button>
+      
+          <ul class="cert-meta" aria-label="Certification details">
+            <li><span>Issued:</span> <strong>Aug 2024</strong></li>
+            <li><span>Expires:</span> <strong>Aug 2029</strong></li>
+          </ul>
+      
+          <p class="muted small">
+            Demonstrates compliance, documentation, and operational accountability. Reinforces my focus on process, safety, and real-world responsibility.
+          </p>
         </article>
-
-        <article class="card">
+      
+        <article class="card cert-card">
           <h3>In Progress</h3>
-          <p class="muted">Add upcoming certs here</p>
-          <p class="small">Example: CompTIA A+, Network+, Microsoft, AWS, etc.</p>
+      
+          <div class="cert-placeholder" aria-hidden="true">
+            <span>Coming soon</span>
+          </div>
+      
+          <ul class="cert-meta" aria-label="Certification details">
+            <li><span>Next:</span> <strong>CompTIA A+</strong></li>
+            <li><span>Status:</span> <strong>Studying</strong></li>
+          </ul>
+      
+          <p class="muted small">
+            I’m working through foundational IT certifications to build verified skills while completing my degree.
+          </p>
         </article>
       </div>
-    </section>
-
     <section id="skills" class="section">
       <div class="section-head">
         <h2>Skills</h2>
@@ -319,5 +358,51 @@
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+  <div class="lightbox" hidden>
+  <div class="lightbox-backdrop" data-close></div>
+  <div class="lightbox-panel" role="dialog" aria-modal="true" aria-label="Certificate preview">
+    <button class="lightbox-close" type="button" data-close aria-label="Close">✕</button>
+    <img class="lightbox-img" alt="">
+  </div>
+</div>
+
+<script>
+  (function () {
+    const box = document.querySelector(".lightbox");
+    const img = document.querySelector(".lightbox-img");
+    const closeEls = document.querySelectorAll("[data-close]");
+    let lastFocus = null;
+
+    function openBox(fullSrc, altText) {
+      lastFocus = document.activeElement;
+      img.src = fullSrc;
+      img.alt = altText || "Certificate preview";
+      box.hidden = false;
+      document.body.classList.add("no-scroll");
+      box.querySelector(".lightbox-close").focus();
+    }
+
+    function closeBox() {
+      box.hidden = true;
+      document.body.classList.remove("no-scroll");
+      img.src = "";
+      img.alt = "";
+      if (lastFocus) lastFocus.focus();
+    }
+
+    document.addEventListener("click", (e) => {
+      const btn = e.target.closest(".cert-thumb");
+      if (btn) {
+        openBox(btn.dataset.full, btn.dataset.alt);
+        return;
+      }
+      if (e.target.closest("[data-close]")) closeBox();
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (!box.hidden && e.key === "Escape") closeBox();
+    });
+  })();
+</script>
 </body>
 </html>
