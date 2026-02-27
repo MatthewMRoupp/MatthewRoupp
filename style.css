@@ -521,12 +521,16 @@ h3{
   position: fixed;
   inset: 0;
   z-index: 9999;
+}
+
+.lightbox:not([hidden]){
   display: grid;
   place-items: center;
 }
 
 .lightbox[hidden]{
-  display: none;
+  display: none !important;
+  pointer-events: none;
 }
 
 .lightbox-backdrop{
