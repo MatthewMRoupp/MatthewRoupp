@@ -163,6 +163,31 @@ a:focus-visible{ outline: 3px solid var(--focus); outline-offset: 3px; border-ra
   margin: 0 0 10px;
   font-size: 1.1rem;
 }
+.profile-hero {
+  text-align: center;
+  padding: 24px 18px;
+}
+
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  box-shadow: 0 14px 40px rgba(0,0,0,0.4);
+  margin-bottom: 16px;
+}
+
+.profile-name {
+  margin: 0 0 6px;
+  font-size: 1.25rem;
+}
+
+.profile-tagline {
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
 
 .site-nav{
   position: sticky;
