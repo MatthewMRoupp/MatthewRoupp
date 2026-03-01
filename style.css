@@ -524,7 +524,21 @@ h3{
   color: var(--muted);
   font-weight: 900;
 }
+.contact-links {
+  columns: 2;
+  column-gap: 32px;
+}
 
+.contact-links li {
+  break-inside: avoid;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 700px) {
+  .contact-links {
+    columns: 1;
+  }
+}
 /* Lightbox */
 .no-scroll{ overflow: hidden; }
 
