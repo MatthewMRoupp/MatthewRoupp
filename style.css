@@ -564,6 +564,10 @@ h3{
     columns: 1;
   }
 }
+
+.contact-links i {
+  margin-right: 8px;
+}
 /* Lightbox */
 .no-scroll{ overflow: hidden; }
 
