@@ -1,21 +1,17 @@
 # Who is Matthew Roupp
 
-Hi, my name is Matt. I am not exactly amazing at this, but I'm working on it.
+Hi, my name is Matt. I am not exactly amazing at this yet, but I am working on it.
 
-At the time of me typing this 2/25/2026 I am only 21. I am a father of 1 and a full time employee and full time college student.
-I have been looking for a new job for the past 3 years because the job I have now has nothing to do with my interests.
-I work as a laifeguard and I'm studying technology. The two dont' really mix with eachother. 
-So, I decided to push myself harder. 
+At the time of writing this (2/25/2026), I am 21 years old. I am a father of one, a full-time employee, and a full-time college student. I have been looking for a new job for the past three years because the job I have now has nothing to do with my interests.
 
-I spent the past week trying to get certifications online to prove that I am committed to what I am going for.
-I have been working on college homework and finishing these courses on Coursera to build up my portfolio.
-Now, I'm working on this website to give me a visual representation of what I am able to do.
-I have learned a lot and I know I'll never know everything even just in this field, but that isn't going to stop me from learning what I can. 
-I can't get hands on experience yet because I can't even get an interview. So here I am. Doing what I can. 
-I will prove to my new growing family that we can thrive with persistance. I may not have a house, or a lot of money, but that's not going to stop me. 
-I have my brain, my family, and ambition to achieve my dreams one step at a time. I will get there some day. 
+I work as a lifeguard, and I am studying technology. The two do not really mix with each other. So, I decided to push myself harder.
 
-If you read this, thank you. I appreciate you actually looking into who I am.
-If you have any ideas on how to help me grow in this field or oppertunities I should look into, I'd be glad to hear it.
+I spent the past week earning certifications online to prove that I am committed to what I am working toward. I have been completing college assignments and finishing courses on Coursera to build my portfolio. Now, I am building this website to provide a visual representation of what I am capable of.
 
-Thank you!
+I have learned a lot, and I know I will never know everything, especially in this field, but that will not stop me from learning what I can. I cannot get hands-on experience yet because I cannot even get an interview. So here I am, doing what I can.
+
+I will prove to my growing family that we can thrive with persistence. I may not have a house or a lot of money yet, but that will not stop me. I have my mind, my family, and the ambition to achieve my dreams one step at a time. I will get there someday.
+
+If you are reading this, thank you. I appreciate you taking the time to learn more about who I am. If you have any ideas on how I can grow in this field or opportunities I should explore, I would be glad to hear them.
+
+Thank you.
