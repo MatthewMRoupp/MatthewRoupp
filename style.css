@@ -560,30 +560,25 @@ h3{
 }
 
 @media (max-width: 700px) {
-  .contact-links {
-    columns: 1;
-  }
+  .contact-links { columns: 1; }
 }
 
 .contact-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 999px;
   text-decoration: none;
-  position: relative;
+  color: var(--blue);
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
-.contact-links a::after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  left: 0;
-  bottom: -3px;
-  background-color: var(--accent);
-  transition: width 0.3s ease;
-}
-
-.contact-links a:hover::after {
-  width: 100%;
-}
+.contact-links a:hover,
+.contact-links a:focus-visible {
+  background: rgba(102,183,255,0.10);
+  color: var(--teal);
+  transform: translateX(2px);
 }
 /* Lightbox */
 .no-scroll{ overflow: hidden; }
