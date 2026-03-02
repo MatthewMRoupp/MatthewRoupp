@@ -568,6 +568,21 @@ h3{
 .contact-links i {
   margin-right: 8px;
 }
+.contact-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  background: rgba(255,255,255,0.05);
+  transition: 0.2s ease;
+}
+
+.contact-links a:hover {
+  background: var(--accent);
+  color: white;
+}
 /* Lightbox */
 .no-scroll{ overflow: hidden; }
 
