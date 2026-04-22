@@ -1,70 +1,47 @@
-<section class="section" id="contact-form">
+<!--
+========================================================================
+This page was only used to demonstrate a fillable form for an assignment
+=========================================================================
+-->
+
+<!-- ==================================
+     CONTACT FORM
+     This form was created for a class
+     assignment to show form inputs.
+================================== -->
+
+<section id="contact-form">
   <div class="container">
 
-    <div class="section-head">
-      <h2>Contact Form</h2>
-      <p class="section-sub">
-        If you have questions about my projects, certifications, or technical work,
-        you can send me a message using the form below.
-      </p>
-    </div>
+    <h2>Contact Form</h2>
 
-    <form class="card" action="#" method="post">
+    <p>
+      This is a sample contact form where a user can enter their information
+      and send a message.
+    </p>
 
-      <div class="grid two">
+    <!-- Form starts here -->
+    <form action="#" method="post" class="card">
 
-        <div>
-          <label for="name"><strong>Name</strong></label><br>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            required
-            aria-required="true"
-            style="width:100%; padding:10px; margin-top:4px;"
-          >
-        </div>
+      <!-- Name input -->
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
 
-        <div>
-          <label for="email"><strong>Email Address</strong></label><br>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            aria-required="true"
-            style="width:100%; padding:10px; margin-top:4px;"
-          >
-        </div>
+      <!-- Email input -->
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
 
-      </div>
+      <!-- Subject input -->
+      <label for="subject">Subject:</label><br>
+      <input type="text" id="subject" name="subject"><br><br>
 
-      <div style="margin-top:16px;">
-        <label for="subject"><strong>Subject</strong></label><br>
-        <input
-          type="text"
-          id="subject"
-          name="subject"
-          style="width:100%; padding:10px; margin-top:4px;"
-        >
-      </div>
+      <!-- Message box -->
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="6" required></textarea><br><br>
 
-      <div style="margin-top:16px;">
-        <label for="message"><strong>Message</strong></label><br>
-        <textarea
-          id="message"
-          name="message"
-          rows="6"
-          required
-          aria-required="true"
-          style="width:100%; padding:10px; margin-top:4px;"
-        ></textarea>
-      </div>
-
-      <div class="button-row" style="margin-top:16px;">
-        <button class="btn primary" type="submit">Send Message</button>
-        <button class="btn ghost" type="reset">Clear Form</button>
-      </div>
+      <!-- Buttons -->
+      <input type="submit" value="Send Message">
+      <input type="reset" value="Clear Form">
 
     </form>
 
