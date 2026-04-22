@@ -1,674 +1,198 @@
-<!doctype html>
-<html lang="en" id="top">
+<!DOCTYPE html>
+<!-- 
+================================================================================================================================
+This html file is made by Matthew Roupp for (2026SP-INFT-1005-01) Introduction to Web Publishing at SUNY Empire State University.
+Yes, I know it's not amazing, but it was what inspired the page that I have now. Every project has to start somewhere.
+Everything is labeled so I could look at it and know where to look to fix it. Lots of trial and error.
+=================================================================================================================================
+-->
+<html lang="en">
 <head>
-<!-- ================================================== -->
-<!-- HEADER -->
-<!-- ================================================== -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Matthew Roupp — IT portfolio showcasing certifications, skills, projects, documents, and learning progress." />
-  <title>Matthew Roupp | My Portfolio</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Basic page setup -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title shown in the browser tab -->
+  <title>Matthew Roupp Portfolio</title>
+
+  <!-- Link to the CSS file -->
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <div class="container hero">
-      <div class="hero-left">
-        <p class="kicker">My Portfolio</p>
-        <h1 class="site-title">Matthew Roupp</h1>
-        <p class="subtitle">
-          Aspiring IT professional and CS student focused on hands-on learning, certifications, and real-world technical skills.
-        </p>
+  <!-- =========================
+       HEADER / NAVIGATION
+       This section holds my name and the navigation links.
+  ========================== -->
+  <header>
+    <div class="container">
+      <h1>Matthew Roupp</h1>
 
-        <div class="button-row">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn" href="#certifications">Certifications</a>
-          <a class="btn ghost" href="#contact">Contact</a>
-        </div>
-
-        <div class="hero-badges" aria-label="Highlights">
-          <span class="badge pill">Hands-on labs</span>
-          <span class="badge pill">Documented growth</span>
-          <span class="badge pill">Reliable &amp; process-driven</span>
-        </div>
-      </div>
-      <aside class="hero-right" aria-label="Profile overview">
-        <div class="profile-card profile-hero">
-      
-          <img 
-            src="assets/images/profile1.jpg" 
-            alt="Matthew Roupp headshot"
-            class="profile-photo"
-            loading="lazy"
-          >
-      
-          <h2 class="profile-name">Matthew Roupp</h2>
-      
-          <p class="profile-tagline">
-            IT student focused on networking, systems, and structured skill development.
-          </p>   
-      </div>
-    </aside>
-  </div>
-</header>
-<!-- ================================================== -->
-<!-- NAVIGATION -->
-<!-- ================================================== -->
-<nav class="site-nav" aria-label="Site navigation">
-  <div class="container nav-wrap">
-    <a class="brand" href="homepage.html" aria-label="Go to homepage">MR</a>
-
-    <div class="nav-meta">
-      <span class="nav-label">Navigate:</span>
-
-      <ul class="nav-list">
-        <li><a href="homepage.html">Home</a></li>
-
-        <li><a href="#about">About</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#documents">Documents</a></li>
-        <li><a href="#images">Images</a></li>
-        <li><a href="#design">Design Notes</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-  </div>
-</nav>
-<!-- ================================================== -->
-<!-- ABOUT SECTION -->
-<!-- ================================================== -->
-  <main id="main" class="container main">
-    <section id="about" class="section">
-      <div class="section-head">
-        <h2>About</h2>
-        <p class="section-sub">
-          I’m building a career in IT by combining formal coursework, certifications, and hands-on projects. I focus on being well-rounded across IT fundamentals while continuing to deepen my strengths over time.
+  </header>
+
+  <!-- =========================
+       HOME / HERO SECTION
+       First section users see.
+       Introduces who I am.
+  ========================== -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+
+      <!-- Left side of hero section -->
+      <div class="hero-text">
+        <h2>Hi, I'm Matthew Roupp</h2>
+        <h3>Aspiring IT Professional</h3>
+
+        <p>
+          I am a computer science student who is interested in technology, IT support,
+          networking, and hands-on learning. I made this portfolio to show some of my
+          skills, projects, and progress.
+        </p>
+
+        <!-- Button that jumps to About section -->
+        <a href="#about" class="button">Learn More About Me</a>
+      </div>
+
+      <!-- Right side of hero section -->
+      <div class="hero-image">
+        <img src="assets/images/profile1.jpg" alt="Matthew Roupp">
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       ABOUT SECTION
+       This section explains a little more about me and my goals.
+  ========================== -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+
+      <p>
+        I am currently studying computer science and working toward a career in Information Technology.
+        I enjoy learning about computers, solving problems, and building my skills through projects,
+        coursework, and certifications.
+      </p>
+
+      <p>
+        My goal is to continue growing in areas like hardware, networking, troubleshooting,
+        and professional communication.
+      </p>
+    </div>
+  </section>
+
+  <!-- =========================
+       SKILLS SECTION
+       This section lists some of the skills I have been building.
+  ========================== -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+
+      <!-- Skill card 1 -->
+      <div class="card">
+        <h3>Hardware and Systems</h3>
+        <ul>
+          <li>PC hardware</li>
+          <li>Basic troubleshooting</li>
+          <li>Windows systems</li>
+          <li>Remote desktop</li>
+        </ul>
+      </div>
+
+      <!-- Skill card 2 -->
+      <div class="card">
+        <h3>Networking</h3>
+        <ul>
+          <li>Networking fundamentals</li>
+          <li>TCP/IP basics</li>
+          <li>Wi-Fi setup</li>
+          <li>Home network troubleshooting</li>
+        </ul>
+      </div>
+
+      <!-- Skill card 3 -->
+      <div class="card">
+        <h3>Other Skills</h3>
+        <ul>
+          <li>GitHub</li>
+          <li>Technical documentation</li>
+          <li>Customer service</li>
+          <li>Leadership</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       PROJECTS SECTION
+       Shows some example projects I have worked on.
+  ========================== -->
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+
+      <!-- Project 1 -->
+      <div class="card">
+        <h3>This Portfolio Website</h3>
+        <p>
+          I created this website using HTML and CSS to share my background, skills, and projects.
+          It helped me practice layout design, spacing, colors, and organizing information on a webpage.
         </p>
       </div>
 
-      <div class="grid two">
-        <article class="card">
-          <h3>What you’ll find here</h3>
-          <ul class="clean-list">
-            <li>Certifications and training progress</li>
-            <li>Projects and labs with clear documentation</li>
-            <li>Supporting documents, screenshots, and write-ups</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>What I’m working toward</h3>
-          <ul class="clean-list">
-            <li>Strong IT fundamentals (networking, OS, security basics)</li>
-            <li>Professional documentation and communication</li>
-            <li>Specialty growth as I discover my best-fit track</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-<!-- ================================================== -->
-<!-- CERTIFICATIONS SECTION -->
-<!-- ================================================== -->
-    <section id="certifications" class="section">
-      <div class="section-head">
-        <h2>Certifications</h2>
-        <p class="section-sub">Credentials and verified learning milestones.</p>
-      </div>
-
-      <div class="callout callout-amber">
-        <strong>Why Certifications?</strong>
-        <p class="small">
-          A strong resume and cover letter are important, but words alone aren’t enough as you move up the career ladder. Employers want to see proof. They want to see commitment, growth, and verified effort - not just claims.
-
-          I’m still working toward my degree, and that takes time. Certifications allow me to demonstrate structured learning and measurable progress while I continue building that foundation. They show that I’m actively developing real skills, not just talking about them.
-
-          There are many certifications available, and I approach them strategically. I start with accessible and foundational options, then continue building toward more advanced credentials as my knowledge grows. Each one adds documented proof of progress and supports the hands-on projects in this portfolio.
-
-          Certifications are not the end goal, they’re stepping stones. They reflect consistency, discipline, and a commitment to continuous improvement.
+      <!-- Project 2 -->
+      <div class="card">
+        <h3>Home Network Setup</h3>
+        <p>
+          I worked on setting up and improving a home network by organizing devices,
+          improving Wi-Fi coverage, and learning more about how networking equipment works together.
         </p>
       </div>
 
-      <div class="grid four">
-                
-        <article class="card cert-card">
-          <h3>Introduction to Computers (Microsoft)</h3>
-          <button class="cert-thumb" type="button"
-            data-full="assets/images/MicrosoftIntroToComputers2026.jpg"
-            data-alt="Microsoft Introduction to Computers Certification 2026"
-            aria-haspopup="dialog">
-            <img src="assets/images/MicrosoftIntroToComputers2026.jpg" alt="Microsoft Introduction to Computers Certification 2026 thumbnail" loading="lazy">
-            <span class="cert-thumb-hint">Click to expand</span>
-          </button>
-          <ul class="cert-meta" aria-label="Certification details">
-            <li><span>Issued:</span> <strong>Feb 2026</strong></li>
-            <li><span>Status:</span> <strong>Completed</strong></li>
-          </ul>
-        
-          <p class="muted small">
-            Microsoft-authorized foundational course covering computer architecture, operating systems, and core digital concepts. Supports my progression into IT support and systems-focused roles.
-          </p>
-        </article>
-        
-        <article class="card cert-card">
-          <h3>Introduction to Secure Networks (Microsoft)</h3>
-          <button class="cert-thumb" type="button"
-            data-full="assets/images/MicrosoftIntroToSecureNetworks2026.jpg"
-            data-alt="Microsoft Introduction to Secure Networks Certification 2026"
-            aria-haspopup="dialog">
-            <img src="assets/images/MicrosoftIntroToSecureNetworks2026.jpg" alt="Microsoft Introduction to Secure Networks Certification 2026 thumbnail" loading="lazy">
-            <span class="cert-thumb-hint">Click to expand</span>
-          </button>
-          <ul class="cert-meta" aria-label="Certification details">
-            <li><span>Issued:</span> <strong>Feb 2026</strong></li>
-            <li><span>Status:</span> <strong>Completed</strong></li>
-          </ul>
-        
-          <p class="muted small">
-            Microsoft-authorized course covering foundational networking concepts and core security principles. Strengthens understanding of secure communication, network structure, and basic threat awareness.
-          </p>
-        </article>
-        
-        <article class="card cert-card">
-          <h3>Software, Hardware, and Data Backup (Microsoft)</h3>
-          <button class="cert-thumb" type="button"
-            data-full="assets/images/MicrosoftAspectsOfSHD2026.jpg"
-            data-alt="Microsoft Essential Aspects of Software, Hardware, and Data Backup"
-            aria-haspopup="dialog">
-            <img src="assets/images/MicrosoftAspectsOfSHD2026.jpg" alt="Microsoft Essential Aspects of Software, Hardware, and Data Backup Certification 2026 thumbnail" loading="lazy">
-            <span class="cert-thumb-hint">Click to expand</span>
-          </button>        
-
-        
-          <ul class="cert-meta" aria-label="Certification details">
-            <li><span>Issued:</span> <strong>Mar 2026</strong></li>
-            <li><span>Status:</span> <strong>Completed</strong></li>
-          </ul>
-        
-          <p class="muted small">
-          This course covered essential IT security and data management topics such as secure system configuration, hardware security features, and data backup and recovery strategies used to protect systems and maintain reliable access to information.
-          </p>
-        </article>
-                
-        <article class="card cert-card">
-          <h3>Cybersecurity and Privacy (Microsoft)</h3>
-        
-           <button class="cert-thumb" type="button"
-            data-full="assets/images/MicrosoftCybersecurityAndPrivacy2026.jpg"
-            data-alt="Cybersecurity And Privacy (Microsoft)"
-            aria-haspopup="dialog">
-            <img src="assets/images/MicrosoftCybersecurityAndPrivacy2026.jpg" alt="Microsoft Cybersecurity And Privacy Certification 2026 thumbnail" loading="lazy">
-            <span class="cert-thumb-hint">Click to expand</span>
-          </button>        
-        
-          <ul class="cert-meta" aria-label="Certification details">
-            <li><span>Issued:</span> <strong>March 2026</strong></li>
-            <li><span>Status:</span> <strong>Completed</strong></li>
-          </ul>
-        
-          <p class="muted small">
-            This course covered cybersecurity and privacy fundamentals including password security, multi-factor authentication, VPNs, secure remote access, and network security. It also explored privacy protections across browsers, mobile devices, and both on-premises and cloud environments.
-        </article>
-
-
-        <article class="card cert-card">
-          <h3>Cybersecurity Fund.</h3>
-        
-           <button class="cert-thumb" type="button"
-            data-full="assets/images/CybersecurityCypherworx2026.jpg"
-            data-alt="Cybersecurity Fundamentals (Cypherworx)"
-            aria-haspopup="dialog">
-            <img src="assets/images/CybersecurityCypherworx2026.jpg" alt="Cybersecurity Fundamentals (Cypherworx) 2026 thumbnail" loading="lazy">
-            <span class="cert-thumb-hint">Click to expand</span>
-          </button>        
-        
-          <ul class="cert-meta" aria-label="Certification details">
-            <li><span>Issued:</span> <strong>March 2026</strong></li>
-            <li><span>Status:</span> <strong>Completed</strong></li>
-          </ul>
-        
-          <p class="muted small">
-        Cybersecurity Fundamentals focused on the core principles used to protect systems, networks, and user data. The course covered essential security practices such as password management, multi-factor authentication, secure remote access, VPN usage, and basic network security concepts. It also introduced privacy protection strategies across browsers, mobile devices, and cloud environments, emphasizing practical steps individuals and organizations can take to reduce security risks.
-          </p>
-        </article>
-        
-        <article class="card cert-card">
-          <h3>Lifeguarding</h3>
-          <button class="cert-thumb" type="button"
-            data-full="assets/images/LifeguardCert2025.jpg"
-            data-alt="Shallow Water Lifeguarding Certification 2025"
-            aria-haspopup="dialog">
-            <img src="assets/images/LifeguardCert2025.jpg" alt="Shallow Water Lifeguarding certification 2025 thumbnail" loading="lazy">
-            <span class="cert-thumb-hint">Click to expand</span>
-          </button>
-          <ul class="cert-meta" aria-label="Certification details">
-            <li><span>Issued:</span> <strong>Jun 2025</strong></li>
-            <li><span>Expires:</span> <strong>Jun 2027</strong></li>
-          </ul>
-        
-          <p class="muted small">
-            Certified in water rescue, CPR/AED for professional rescuers, and first aid. Demonstrates leadership, rapid assessment, risk management, and the ability to act decisively in high-pressure environments.
-          </p>
-        </article>        
-        
-        <article class="card cert-card">
-          <h3>Emergency Oxygen</h3>
-          <button class="cert-thumb" type="button"
-            data-full="assets/images/OxygenCert2024.jpg"
-            data-alt="Administering Emergency Oxygen Certificate 2024"
-            aria-haspopup="dialog">
-            <img src="assets/images/OxygenCert2024.jpg" alt="Administering Emergency Oxygen certificate thumbnail" loading="lazy">
-            <span class="cert-thumb-hint">Click to expand</span>
-          </button>
-          <ul class="cert-meta" aria-label="Certification details">
-            <li><span>Issued:</span> <strong>Aug 2024</strong></li>
-            <li><span>Expires:</span> <strong>Aug 2026</strong></li>
-          </ul>
-        
-          <p class="muted small">
-            Certified to safely assess emergencies and administer supplemental oxygen. Demonstrates calm decision-making, procedural accuracy, and the ability to respond effectively under pressure.
-          </p>
-        </article>
-        
-        <article class="card cert-card">
-          <h3>Adult &amp; Child CPR/AED</h3>
-          <button class="cert-thumb" type="button"
-            data-full="assets/images/CPR-AED Cert2024.jpg"
-            data-alt="Adult and Child CPR/AED certification certificate"
-            aria-haspopup="dialog">
-            <img src="assets/images/CPR-AED Cert2024.jpg" alt="Adult and Child CPR/AED certificate thumbnail" loading="lazy">
-            <span class="cert-thumb-hint">Click to expand</span>
-          </button>
-          <ul class="cert-meta" aria-label="Certification details">
-            <li><span>Issued:</span> <strong>Jan 2026</strong></li>
-            <li><span>Expires:</span> <strong>Jan 2028</strong></li>
-          </ul>
-          <p class="muted small">
-            Covers emergency response, AED use, and first aid basics. Supports my goal of being reliable under pressure and following clear procedures.
-          </p>
-        </article>
-
-        <article class="card cert-card">
-          <h3>CPO</h3>
-          <button class="cert-thumb" type="button"
-            data-full="assets/images/CPO Cert.jpg"
-            data-alt="Certified Pool and Spa Operator certification certificate"
-            aria-haspopup="dialog">
-            <img src="assets/images/CPO Cert.jpg" alt="CPO certificate thumbnail" loading="lazy">
-            <span class="cert-thumb-hint">Click to expand</span>
-          </button>
-          <ul class="cert-meta" aria-label="Certification details">
-            <li><span>Issued:</span> <strong>Aug 2024</strong></li>
-            <li><span>Expires:</span> <strong>Aug 2029</strong></li>
-          </ul>
-          <p class="muted small">
-            Demonstrates compliance, documentation, and operational accountability. Reinforces my focus on process, safety, and real-world responsibility.
-          </p>
-        </article>
+      <!-- Project 3 -->
+      <div class="card">
+        <h3>Home Media Server</h3>
+        <p>
+          I set up a home media server and practiced organizing storage, managing files,
+          and learning more about remote access and system management.
+        </p>
       </div>
-    </section>
-<!-- ================================================== -->
-<!-- SKILLS SECTION -->
-<!-- ================================================== -->
-    <section id="skills" class="section">
-       <div class="grid three">
-        <article class="card">
-          <h3>Hardware & Systems</h3>
-          <ul class="tag-list">
-            <li class="tag">PC Hardware</li>
-            <li class="tag">System Troubleshooting</li>
-            <li class="tag">Windows Administration</li>
-            <li class="tag">Remote Desktop</li>
-            <li class="tag">RAID & Storage</li>
-            <li class="tag">Workstation Setup</li>
-          </ul>
-        </article>
-      
-        <article class="card">
-          <h3>Networking & Infrastructure</h3>
-          <ul class="tag-list">
-            <li class="tag">Networking Fundamentals</li>
-            <li class="tag">TCP/IP</li>
-            <li class="tag">DNS / DHCP</li>
-            <li class="tag">VPN Concepts</li>
-            <li class="tag">Wi-Fi & Home Networking</li>
-            <li class="tag">Network Troubleshooting</li>
-          </ul>
-        </article>
-      
-        <article class="card">
-          <h3>Tools & Professional Skills</h3>
-          <ul class="tag-list">
-            <li class="tag">Git / GitHub</li>
-            <li class="tag">Technical Documentation</li>
-            <li class="tag">Customer Support</li>
-            <li class="tag">Leadership</li>
-            <li class="tag">Training & Mentoring</li>
-            <li class="tag">Incident Reporting</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-<!-- ================================================== -->
-<!-- PROJECTS SECTION -->
-<!-- ================================================== -->
-    <section id="projects" class="section">
-      <div class="section-head">
-        <h2>Projects</h2>
-        <p class="section-sub">Things that I worked on in the past or am currently working on.</p>
-      </div>
-    
-      <div class="grid two">
-        <article class="card featured">
-          <h3>This GitHub Portfolio</h3>
-          <p class="muted">HTML + CSS • Responsive Layout • Accessibility Focus</p>
-    
-          <p><strong>Goal:</strong> Build a lightweight, accessible portfolio to showcase projects, certifications, and technical growth.</p>
-    
-          <p><strong>What I implemented:</strong></p>
-          <ul class="clean-list">
-            <li>Responsive grid layout using CSS.</li>
-            <li>Accessible navigation with focus states and skip links.</li>
-            <li>Optimized styling for performance and readability.</li>
-            <li>Organized sections for projects, certifications, and documentation.</li>
-          </ul>
-    
-          <p><strong>What I learned:</strong></p>
-          <ul class="clean-list">
-            <li>Layout structure and content hierarchy.</li>
-            <li>CSS organization and debugging.</li>
-            <li>Importance of clarity and usability in technical presentation.</li>
-          </ul>
-    
-          <div class="meta">
-            <span class="badge">Clean UI</span>
-            <span class="badge">Responsive Design</span>
-            <span class="badge">Accessibility</span>
-            <span class="contact-links">
-              <a href="https://github.com/MatthewMRoupp/portfilio" target="_blank" rel="noopener">
-                <i class="fa-solid fa-code"></i> View Code Here
-              </a>
-            </span>
-          </div>
-        </article>
-    
-        <article class="card">
-          <h3>Home Network Segmentation &amp; Wi-Fi 6 Mesh Setup</h3>
-          <p class="muted">Fiber Network • Switch Topology • Device Isolation</p>
-    
-          <p><strong>Goal:</strong> Improve wireless coverage and separate personal, household, and guest devices.</p>
-          <p><strong>Environment:</strong> Fiber modem, router, switch, 3-unit Wi-Fi 6 mesh system.</p>
-    
-          <p><strong>What I did:</strong></p>
-          <ul class="clean-list">
-            <li>Planned physical network topology (modem → router → switch → mesh).</li>
-            <li>Configured separate networks for different device groups.</li>
-            <li>Tested signal strength and verified connectivity.</li>
-            <li>Confirmed device separation between networks.</li>
-          </ul>
-    
-          <p><strong>What I learned:</strong></p>
-          <ul class="clean-list">
-            <li>Network segmentation fundamentals.</li>
-            <li>How physical layout impacts performance.</li>
-            <li>Structured troubleshooting and validation.</li>
-          </ul>
-    
-          <div class="meta">
-            <span class="badge">Networking</span>
-            <span class="badge">Wi-Fi 6 & 7</span>
-            <span class="badge">Troubleshooting</span>
-          </div>
-        </article>
+    </div>
+  </section>
 
-        <article class="card">
-          <h3>Home Media Server Deployment &amp; Remote Access</h3>
-          <p class="muted">Windows • Storage • Remote Administration</p>
-        
-          <p><strong>Goal:</strong> Centralize storage and manage the server remotely for maintenance and updates.</p>
-          <p><strong>Environment:</strong> HP workstation, Windows, large storage array, Microsoft Remote Desktop.</p>
-        
-          <p><strong>What I did:</strong></p>
-          <ul class="clean-list">
-            <li>Configured storage and organized file structure for usability.</li>
-            <li>Set up remote administration using Microsoft Remote Desktop.</li>
-            <li>Validated basic access, stability, and day-to-day management workflow.</li>
-            <li>Documented future improvements (backup and redundancy planning).</li>
-          </ul>
-        
-          <p><strong>What I learned:</strong></p>
-          <ul class="clean-list">
-            <li>Storage tradeoffs (performance vs. redundancy).</li>
-            <li>Why backups and recovery planning matter.</li>
-            <li>How remote administration fits real IT workflows.</li>
-          </ul>
-        
-          <div class="meta">
-            <span class="badge">Servers</span>
-            <span class="badge">Windows</span>
-            <span class="badge">Remote Access</span>
-          </div>
-        </article>
-      </div>
-    </section>
-<!-- ================================================== -->
-<!-- DOCUMENTS SECTION -->
-<!-- ================================================== -->
-    <section id="documents" class="section">
-      <div class="section-head">
-        <h2>Documents</h2>
-        <p class="section-sub">File collection for other information.</p>
-      </div>
+  <!-- =========================
+       CONTACT SECTION
+  ========================== -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
 
-      <div class="grid three">
-        <a class="doc-card" href="assets/documents/Resume IT v02.24.2026.pdf" target="_blank" rel="noopener">
-          <div class="doc-icon" aria-hidden="true">PDF</div>
-          <div>
-            <h3 class="doc-title">IT Resume</h3>
-            <p class="doc-meta">Last updated: Feb 2026</p>
-          </div>
-        </a>
+      <p>Email: <a href="mailto:mmroupp@gmail.com">mmroupp@gmail.com</a></p>
+      <p>Phone: <a href="tel:+15704045939">(570) 404-5939</a></p>
+      <p>GitHub: <a href="https://github.com/MatthewMRoupp" target="_blank">MatthewMRoupp</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/matthew-roupp-abb33a304/" target="_blank">View Profile</a></p>
+    </div>
+  </section>
 
-        <a class="doc-card" href="assets/documents/IT Cover Letter v02.24.2026.pdf" target="_blank" rel="noopener">
-          <div class="doc-icon" aria-hidden="true">PDF</div>
-          <div>
-            <h3 class="doc-title">IT Cover Letter</h3>
-            <p class="doc-meta">Last updated: Feb 2026</p>
-          </div>
-        </a>
-
-        <a class="doc-card" href="assets/images/DeansList2024.jpg" target="_blank" rel="noopener">
-          <div class="doc-icon" aria-hidden="true">JPG</div>
-          <div>
-            <h3 class="doc-title">Deans List 2024</h3>
-            <p class="doc-meta">Image File</p>
-          </div>
-        </a>
-
-        <a class="doc-card" href="assets/documents/Unofficial Transcript.pdf" target="_blank" rel="noopener">
-          <div class="doc-icon" aria-hidden="true">PDF</div>
-          <div>
-            <h3 class="doc-title">Unofficial College Transcript 2026</h3>
-            <p class="doc-meta">Update of my college progress so far.</p>
-          </div>
-        </a>
-      </div>
-    </section>
-<!-- ================================================== -->
-<!-- IMAGES SECTION -->
-<!-- ================================================== -->
-    <section id="images" class="section">
-      <div class="section-head">
-        <h2>Images</h2>
-        <p class="section-sub">Photos of labs, diagrams, and real work evidence.</p>
-      </div>
-
-      <div class="grid gallery">
-        <figure class="img-card">
-          <button class="cert-thumb" type="button"
-            data-full="assets/images/Network.png"
-            data-alt="Home network topology diagram showing ISP, modem, primary router, mesh nodes, switch, and client devices"
-            aria-haspopup="dialog">
-            <img src="assets/images/Network.png" 
-                alt="Home network topology diagram showing ISP, modem, primary router, mesh nodes, switch, and client devices" 
-                loading="lazy">
-            <span class="cert-thumb-hint">Click to expand</span>
-          </button>
-          
-          <figcaption>
-            <strong>Home Network Architecture (2026)</strong><br>
-            I chose a mesh WiFi system to improve coverage and eliminate dead zones across multiple rooms without relying on a single high-powered router. The dynamic backhaul allows nodes to automatically select the fastest communication path, whether wireless or Ethernet, improving reliability and performance. My goal was to separate wired and wireless clients while maintaining stable internet access throughout the home. After deployment, I validated signal strength, confirmed device isolation, and tested wired versus wireless performance to ensure consistent connectivity.
-          </figcaption>
-        </figure>
-      </div>
-    </section>
-<!-- ================================================== -->
-<!-- DESIGN NOTES -->
-<!-- ================================================== -->
-    <section id="design" class="section">
-      <div class="section-head">
-        <h2>Design Notes</h2>
-        <p class="section-sub">Audience, purpose, objectives, and accessibility choices.</p>
-      </div>
-
-      <div class="grid two">
-        <article class="card">
-          <h3>Audience, Purpose, Objectives</h3>
-          <ul class="clean-list">
-            <li><strong>Audience:</strong> employers, recruiters, instructors, and collaborators</li>
-            <li><strong>Purpose:</strong> present proof of skills, learning, and professionalism</li>
-            <li><strong>Objectives:</strong> showcase certifications, projects, and documentation</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>Navigation + Accessibility</h3>
-          <ul class="clean-list">
-            <li>Persistent navigation with clear section labels</li>
-            <li>Skip link for keyboard users</li>
-            <li>High-contrast text and visible focus styles</li>
-            <li>Readable spacing and responsive layout</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-<!-- ================================================== -->
-<!-- CONTACT SECTION -->
-<!-- ================================================== -->
-    <section id="contact" class="section">
-      <div class="section-head">
-        <h2>Contact</h2>
-        <p class="section-sub">Links for professional contact and profiles.</p>
-      </div>
-
-      <div class="grid two">
-        <article class="card">
-          <h3>Links</h3>
-          <ul class="clean-list contact-links">
-            <li>
-              <a href="mailto:mmroupp@gmail.com">
-                <i class="fa-solid fa-envelope"></i> mmroupp@gmail.com
-              </a>
-            </li>
-            
-            <li>
-              <a href="tel:+15704045939">
-                <i class="fa-solid fa-phone"></i> (570) 404-5939
-              </a>
-            </li>            
-            <li>
-              <a href="https://github.com/MatthewMRoupp" target="_blank" rel="noopener">
-                <i class="fa-brands fa-github"></i> GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/matthew-roupp-abb33a304/" target="_blank" rel="noopener">
-                <i class="fa-brands fa-linkedin"></i> LinkedIn
-              </a>
-            </li>
-            <li>
-              <a href="https://app.joinhandshake.com/profiles/matthewroupp" target="_blank" rel="noopener">
-                <i class="fa-solid fa-handshake"></i> Handshake
-              </a>
-            </li>
-            <li>
-              <a href="https://profile.indeed.com/p/matthewr-rkym48v" target="_blank" rel="noopener">
-                <i class="fa-solid fa-briefcase"></i> Indeed
-              </a>
-            </li>
-          </ul>
-        </article>
-  
-        <article class="card">
-          <h3>Quick note</h3>
-          <p>I’m open to entry-level roles, internships, and opportunities to learn from experienced teams.</p>
-          <p class="small muted">Authorized to work in the US. Willing to relocate from PA.</p>
-        </article>
-      </div>
-    </section>
-  </main>
-<!-- ================================================== -->
-<!-- FOOTER -->
-<!-- ================================================== -->
-  <footer class="site-footer">
-    <div class="container footer-row">
-      <p class="small muted">© <span id="year"></span> Matthew Roupp • Built with GitHub Pages</p>
-      <a class="small" href="#top">Back to top</a>
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Matthew Roupp</p>
     </div>
   </footer>
 
-  <div class="lightbox" hidden>
-    <div class="lightbox-backdrop" data-close></div>
-    <div class="lightbox-panel" role="dialog" aria-modal="true" aria-label="Certificate preview">
-      <button class="lightbox-close" type="button" data-close aria-label="Close">✕</button>
-      <img class="lightbox-img" alt="">
-    </div>
-  </div>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    (function () {
-      const box = document.querySelector(".lightbox");
-      const img = document.querySelector(".lightbox-img");
-      let lastFocus = null;
-
-      function openBox(fullSrc, altText) {
-        lastFocus = document.activeElement;
-        img.src = fullSrc;
-        img.alt = altText || "Certificate preview";
-        box.hidden = false;
-        document.body.classList.add("no-scroll");
-        box.querySelector(".lightbox-close").focus();
-      }
-
-      function closeBox() {
-        box.hidden = true;
-        document.body.classList.remove("no-scroll");
-        img.src = "";
-        img.alt = "";
-        if (lastFocus) lastFocus.focus();
-      }
-
-      document.addEventListener("click", (e) => {
-        const btn = e.target.closest(".cert-thumb");
-        if (btn) {
-          openBox(btn.dataset.full, btn.dataset.alt);
-          return;
-        }
-        if (e.target.closest("[data-close]")) closeBox();
-      });
-
-      document.addEventListener("keydown", (e) => {
-        if (!box.hidden && e.key === "Escape") closeBox();
-      });
-    })();
-  </script>
 </body>
 </html>
